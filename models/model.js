@@ -11,6 +11,10 @@ const Schema = mongoose.Schema;
 
 // Create Schema Instance and add schema propertise
 const resultadoSchema = new Schema({
+    day: {
+        type: String,
+        required: true
+    },
     time: {
         type: String,
         required: true

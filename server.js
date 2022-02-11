@@ -154,5 +154,5 @@ console.log("Rodando web scraping");
 })()
 
 setInterval(function () {
-    https.get("https://webcrepe-mongodb.herokuapp.com");
+    https.get("https://webcrepe-smash.herokuapp.com");
 }, 20 * 60 * 1000); // every 20 minutes

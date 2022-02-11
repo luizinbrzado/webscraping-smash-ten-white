@@ -130,7 +130,7 @@ console.log("Rodando web scraping");
                             method: "POST",
                             json: true,   // <--Very important!!!
                             body: {
-                                "day": now.toLocaleDateString('pt-br').slice(0, 5),
+                                "day": now.toLocaleDateString('pt-br'),
                                 "time": now.toLocaleTimeString('pt-br').slice(0, 5),
                                 "result": [lastEleven, lastTen, lastNine, lastEight, lastSeven, lastSix, lastFive, lastFour, lastThree, lastTwo, lastOne]
                             }

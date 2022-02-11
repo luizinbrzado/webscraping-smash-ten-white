@@ -102,7 +102,7 @@ console.log("Rodando web scraping");
 
         try {
             if (edicaoCache !== edicaoUltimo) {
-                
+
                 await driver.sleep(1000);
 
                 numeroUltimo = await driver.findElement(webdriver.By.xpath('//*[@id="desktop"]/div[2]/div/div[3]/div[2]/div[1]/div[2]/div/div/div[1]/div/div/div')).getText();
@@ -130,7 +130,7 @@ console.log("Rodando web scraping");
                             method: "POST",
                             json: true,   // <--Very important!!!
                             body: {
-                                "day": now.toDateString('pt-br').slice(0, 5),
+                                "day": now.toLocaleDateString('pt-br').slice(0, 5),
                                 "time": now.toLocaleTimeString('pt-br').slice(0, 5),
                                 "result": [lastEleven, lastTen, lastNine, lastEight, lastSeven, lastSix, lastFive, lastFour, lastThree, lastTwo, lastOne]
                             }
